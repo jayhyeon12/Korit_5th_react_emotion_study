@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { useRef, useState } from 'react';
 import * as S from './MyPagestyle';
-import logo512 from './logo512.png';
+import logo512 from "./logo512.png";
 
 function MyPage() {
 
@@ -36,20 +36,24 @@ function MyPage() {
             </div>
             <div css={S.profileInputLayout}>
                 <div css={S.inputBox}>
-                    <input css={S.profileInput} id='name' type="text" placeholder=' '/>
+                    <input css={S.profileInput} 
+                    id="name" type="text" placeholder=" "/>
                     <label htmlFor="name">성명</label>
                 </div>
                 <div css={S.inputBox}>
-                    <input css={S.profileInput} id='birth' type="text" placeholder=' '/>
+                    <input css={S.profileInput} 
+                    id="birth" type="text" placeholder=" "/>
                     <label htmlFor="birth">생년월일</label>
                 </div>
                 <div css={S.inputBox}>
-                    <input css={S.profileInput} id='phone' type="text" placeholder=' '/>
+                    <input css={S.profileInput} 
+                    id="phone" type="text" placeholder=" "/>
                     <label htmlFor="phone">연락처</label>
                 </div>
                 <div css={S.inputBox}>
-                    <input css={S.profileInput} id='adr' type="text" placeholder=' '/>
-                    <label htmlFor="address">성명</label>
+                    <input css={S.profileInput} 
+                    id="adr" type="text" placeholder=" "/>
+                    <label htmlFor="address">주소</label>
                 </div>
             </div>
             <div css={S.buttonLayout}>

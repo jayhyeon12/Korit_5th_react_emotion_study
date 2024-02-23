@@ -11,18 +11,18 @@ function TopBar() {
     const menus = useMemo(() => [
         {
             id: 1,
-            menuname: "기관소개",
-            path: "/introduction"
+            path: "/introduction",
+            menuname: "기관소개"
         },
         {
             id: 2,
-            menuname: "교육과정",
-            path: "/curriculum"
+            path: "/curriculum",
+            menuname: "교육과정"
         },
         {
             id: 3,
-            menuname: "게시판",
-            path: "/board"
+            path: "/Q&A",
+            menuname: "묻고답하기"
         },
     ], []);
 
@@ -31,7 +31,7 @@ function TopBar() {
             <button css={S.toggleButton} onClick={() => setShow(!isShow)}>
                 {isShow? <FaCaretUp /> : <FaCaretDown />}
             </button>
-            <ul css={S.menus}>
+            <ul css={S.menuList}>
                 {menus.map(menu => 
                     <Link css={S.menuItem} to={menu.path} key={menu.id} onClick={() => setShow(false)}>
                         <li>{menu.menuname}</li>

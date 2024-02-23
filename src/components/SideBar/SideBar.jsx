@@ -5,24 +5,23 @@ import * as S from "./SideBarstyle";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-
 function SideBar() {
     const [ isShow, setIsShow ] = useState(false);
 
     const menus = useMemo(() => [
         {
             id: 1,
+            path: "/signup",
+            name: "회원가입"
+        },
+        {
+            id: 2,
             path: "/mypage",
             name: "마이페이지"
         },
         {
-            id: 2,
-            path: "/board",
-            name: "게시판"
-        },
-        {
             id: 3,
-            path: "notice",
+            path: "/notice",
             name: "공지사항"
         },
     ], []);

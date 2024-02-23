@@ -10,8 +10,8 @@ export const layout = (isShow) => css`
     width: 300px;
     height: 100%;
     transition: left 0.5s ease-in-out;
-    background-color: white;
-    box-shadow: 1px 0px 10px #000022;
+    background-color: ivory;
+    box-shadow: 1px 0px 2px #000022;
 `;
 
 export const toggleButton = css`
@@ -23,8 +23,8 @@ export const toggleButton = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding: 20px;
+
+    padding: 0px;
     border: 1px solid #eee;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -50,10 +50,10 @@ export const menuList = css`
 export const menuItem = css`
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     align-items: center;
 
-    border-bottom: 1px solid #abab;
+    border-bottom: 1px solid #dbdbdb;
     width: 100px;
     height: 50px;
     color: black;
@@ -61,7 +61,7 @@ export const menuItem = css`
     text-decoration: none;
     cursor: pointer;
     &:nth-of-type(1) {
-        border-top: 1px solid #bcbc;
+        border-top: 1px solid #dbdbdb;
     }
     &:hover {
         background-color: #eee;
@@ -69,4 +69,4 @@ export const menuItem = css`
     &:hover {
         background-color: $dbdbdb;
     }
-`
+`;

@@ -15,13 +15,13 @@ function App() {
       <RootLayout>
         <Routes>
 
-          <Route path='/mypage' element={<MyPage/>}/>
-          <Route path='/board' element={<>게시판</>}/>
-          <Route path='/notice' element={<>공지사항</>}/>
+          <Route path='/signup' element={<>회원가입</>} />
+          <Route path='/mypage' element={<MyPage/>} />
+          <Route path='/notice' element={<>공지사항</>} />
 
           <Route path='/introduction' element={<>기관소개</>} />
           <Route path='/curriculum' element={<>교육과정</>} />
-          <Route path='/board' element={<>게시판</>} />
+          <Route path='/Q&A' element={<>묻고답하기</>} />
           
         </Routes>
       </RootLayout>

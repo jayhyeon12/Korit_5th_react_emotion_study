@@ -2,11 +2,6 @@ import { css } from "@emotion/react";
 
 export const layout = css`
     padding: 100px 30px 0px;
-    box-sizing: border-box;
-    margin: 10px;
-    border: 1px solid #adad;
-    width: 300px;
-    height: 300px;
 
 `;
 
@@ -22,23 +17,23 @@ export const title = css`
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 `;
 
 export const profileImg = css`
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin:0px auto 20px;
     box-sizing: border-box;
     border: 1px solid #fff;
-    justify-content: center;
-    margin:0px auto 20px;
-    align-items: center;
-    border: 1px solid #eee;
-    border-radius: 50px;
-    width: 300px;
-    height: 300px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     cursor: pointer;
     & > img {
-
+        width: 100%;
     }
 `;
 
@@ -47,10 +42,10 @@ export const nickname = css`
     outline: none;
     border: none;
     border-bottom: 2px solid #dddd;
+    padding: 5px 10px 0px;
     text-align: center;
-    padding: 5px 10px;
     width: 200px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
@@ -72,7 +67,7 @@ export const profileInputLayout = css`
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-bottom: 0px auto 20px;
+    margin: 0px auto 20px;
     border: 1px solid #dfdf;
     padding: 10px;
     width: 700px;
@@ -89,7 +84,7 @@ export const profileInput = css`
     border: 1px solid #dbdbdb;
     padding: 20px 20px 10px;
     font-size: 16px;
-    width: 335%;
+    width: 335px;
     &:nth-of-type(3n), &:nth-of-type(4n) {
         margin: 0;
     }
@@ -116,6 +111,8 @@ export const profileInput = css`
 `;
 
 export const buttonLayout = css`
+    display: flex;
+    justify-content: center;
     align-items: center;
 `;
 
