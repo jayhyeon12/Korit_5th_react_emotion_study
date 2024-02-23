@@ -5,7 +5,7 @@ export const layout = (isShow) => css`
     position: fixed;
     top: 0;
     left: ${isShow ? "0px" : "-300px"};
-
+    z-index: 90;
     border-right: 1px solid #111;
     width: 300px;
     height: 100%;
@@ -57,7 +57,7 @@ export const menuItem = css`
     width: 100px;
     height: 50px;
     color: black;
-    font-weight: G00;
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
     &:nth-of-type(1) {

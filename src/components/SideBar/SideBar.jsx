@@ -1,7 +1,7 @@
-/** @jsx jsxImportSource @emotion/react */
+/** @jsxImportSource @emotion/react */
 
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
-import * as S from "./style";
+import * as S from "./SideBarstyle";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -36,8 +36,8 @@ function SideBar() {
                 {menus.map(menu => 
                     <Link css={S.menuItem} to={menu.path} key={menu.id} onClick={() => setIsShow(false)}>
                         <li>{menu.name}</li>
-                    </Link>)
-                }
+                    </Link>
+                )}
             </ul>
         </aside>
     );
